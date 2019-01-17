@@ -1,2 +1,7 @@
 php artisan key:generate
 -------------
+php artisan serve
+---
+6
+--
+https://www.youtube.com/watch?v=7UFiW7_fu3I&list=PLlxQJeQRaKDSnp4hbA3nJj_OnB0SCQLBU&index=6
