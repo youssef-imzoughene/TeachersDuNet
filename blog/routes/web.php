@@ -15,8 +15,40 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/about', function () {
-    return view('pages.about');
+    $name="youssef imzoughene";
+    return view('pages.about')->with("name",$name);
 });
 Route::get('/make', function () {
-    return View::make('pages.make');
+    $job="developer";
+    $company="devcorp";
+    //************** */
+    //return View::make('pages.make')->with("emploi",$job)->with('entreprise',$company);
+    //************** */
+    
+    return View::make('pages.make')->with(
+        [
+            "emploi"=>$job,
+            'entreprise'=>$company
+        ]
+    );
+    
+    //************** */
+});
+Route::get('/array', function () { 
+    /*
+    $data=[
+        "emploi" => "developer",
+        "entreprise" => "devcorp"
+    ];
+    return View::make('pages.array',$data);
+    */
+    $view=View::make("pages.array");
+    $view->emploi     = "developer angular laravel";
+    $view->entreprise = "devcorp corporation";
+    return $view;
+});
+Route::get('/compactFunction', function () { 
+    $job="developer";
+    $company="devcorp";
+    return View::make('pages.compactFunction',compact("job","company")); 
 });

@@ -87,6 +87,8 @@
                 <div class="links">
                     <a href="/about">About</a>
                     <a href="/make">Make</a>
+                    <a href="/array">myArray</a>
+                    <a href="/compactFunction">compactFunction</a>
                 </div>
             </div>
         </div>

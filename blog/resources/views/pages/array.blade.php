@@ -24,11 +24,8 @@
         </style>
     </head>
     <body>
-        <h1>about us</h1>
-        <h2>my name is
-        @php
-            echo $name
-        @endphp 
-        </h2>
+        <h1>myArray fonction</h1>
+        <h2>i work as {{$emploi}} at {{$entreprise}} </h2>
+        <h2><?= "i work as ". $emploi ." at ".$entreprise  ?></h2>
     </body>
 </html>
