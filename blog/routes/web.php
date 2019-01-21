@@ -24,17 +24,17 @@ Route::get('/make', function () {
     //************** */
     //return View::make('pages.make')->with("emploi",$job)->with('entreprise',$company);
     //************** */
-    
+
     return View::make('pages.make')->with(
         [
             "emploi"=>$job,
             'entreprise'=>$company
         ]
     );
-    
+
     //************** */
 });
-Route::get('/array', function () { 
+Route::get('/array', function () {
     /*
     $data=[
         "emploi" => "developer",
@@ -47,16 +47,27 @@ Route::get('/array', function () {
     $view->entreprise = "devcorp corporation";
     return $view;
 });
-Route::get('/compactFunction', function () { 
+Route::get('/compactFunction', function () {
     $job="developer";
     $company="devcorp";
-    return View::make('pages.compactFunction',compact("job","company")); 
+    return View::make('pages.compactFunction',compact("job","company"));
 });
-Route::get('/events', function () { 
+Route::get('/events', function () {
     $events=[
         "Make PHP Great Again",
         "Php Conference",
         "Laravel Conference"
     ];
-    return view('events.index',compact("events")); 
+    return view('events.index',compact("events"));
+});
+Route::get('/blade', function () {
+    $name = "imzoughene";
+    $isWeekend=date('N')>=6;
+    $events=[
+        //"Make PHP Great Again",
+        //"Php Conference",
+        //"Laravel Conference"
+    ];
+    //return view('blade.index')->withName($name);
+    return view('blade.index',compact('name','isWeekend','events'));
 });

@@ -90,6 +90,7 @@
                     <a href="/array">myArray</a>
                     <a href="/compactFunction">compactFunction</a>
                     <a href="/events">Events</a>
+                    <a href="/blade">Blade</a>
                 </div>
             </div>
         </div>
