@@ -89,6 +89,7 @@
                     <a href="/make">Make</a>
                     <a href="/array">myArray</a>
                     <a href="/compactFunction">compactFunction</a>
+                    <a href="/events">Events</a>
                 </div>
             </div>
         </div>

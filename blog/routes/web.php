@@ -52,3 +52,11 @@ Route::get('/compactFunction', function () {
     $company="devcorp";
     return View::make('pages.compactFunction',compact("job","company")); 
 });
+Route::get('/events', function () { 
+    $events=[
+        "Make PHP Great Again",
+        "Php Conference",
+        "Laravel Conference"
+    ];
+    return view('events.index',compact("events")); 
+});
